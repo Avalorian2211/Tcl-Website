@@ -9,12 +9,12 @@
       <img src="images/tcl.jpg" alt="Logo"  width="350" height="55">
       <div class="header-right">
         <a class="active" href="#home">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="#blog"> Blog</a>
-        <a href =#clients> Clients</a>
-        <a href =#Services>Services</a>
-        <a href =#products>Products</a>
+        <a href="Contact.html">Contact</a>
+        <a href="About.html">About</a>
+        <a href="Blog.html"> Blog</a>
+        <a href =Clients.html> Clients</a>
+        <a href =Services.html>Services & Products</a>
+
   </div>
 </div>
       </div>
@@ -83,23 +83,19 @@
                     <p>Your IT investment is only as good as your business operations. Our approach helps in the reduction of Total Cost of Ownership associated with your investment in IT and  also increase the return of your investment. </p>
                   </div>
                 </div>
-<img src="images/strategy2-1.jpg">
+<img src="images/strategy2-1.jpg" class="center">
 
 
 
   <div class="container">
-
     <form action="action_page.php">
      <h2>Inquiry Form</h2>
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
       <label for="lname">Last Name</label>
       <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
       <label for="email">Email</label>
       <input type="text" id="email" placeholder="Your Email"
-
       <label for="country">Country</label>
       <select id="country" name="country">
         <option value="UK">United Kingdoms</option>
@@ -108,14 +104,21 @@
         <option value="usa">USA</option>
         <option value="usa">Nigeria</option>
       </select>
-
       <label for="subject">Subject</label>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-
       <input type="submit" value="Submit">
+    </form>
+  </div>
 
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Chat</h1>
 
+      <label for="msg"><b>Message</b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
 
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
   </div>
 
